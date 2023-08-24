@@ -1,0 +1,121 @@
+{
+	"info": {
+		"_postman_id": "87f99b50-aa6d-407c-874f-4aaee75746df",
+		"name": "TODOMVC",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "317924"
+	},
+	"item": [
+		{
+			"name": "merchantDetails_All",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/assignment/merchant/merchantDetails",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"assignment",
+						"merchant",
+						"merchantDetails"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "merchantDetails_Id_Present",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"merchantId\": \"1000000002\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/assignment/merchant/merchantDetails",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"assignment",
+						"merchant",
+						"merchantDetails"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "merchantDetails_Id_NotPresent",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"merchantId\": \"10000000022\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/assignment/merchant/merchantDetails",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"assignment",
+						"merchant",
+						"merchantDetails"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
